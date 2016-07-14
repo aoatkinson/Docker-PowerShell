@@ -70,7 +70,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{Fill Id Description}}
+Specifies the id of the container to retrieve network information for.
 
 ```yaml
 Type: String[]
@@ -85,7 +85,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-{{Fill Name Description}}
+Specifies the name of the container to retrieve network information for. 
 
 ```yaml
 Type: String[]

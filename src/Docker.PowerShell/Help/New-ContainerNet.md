@@ -17,19 +17,19 @@ New-ContainerNet [-HostAddress <String>] [-CertificateLocation <String>] [[-Name
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+Creates a new container network. 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> {{ Add example code here }}
+PS C:\> New-ContainerNet -Name Test -Mode NAT
 ```
 
-{{ Add example description here }}
+Creates a new NAT network named 'Test'.
 ## PARAMETERS
 
 ### -CertificateLocation
-{{Fill CertificateLocation Description}}
+The location of the X509 certificate file named “key.pfx” that will be used for authentication with the server.  (Note that certificate authorization work is still in progress and this is likely to change).
 
 ```yaml
 Type: String
@@ -74,7 +74,7 @@ Accept wildcard characters: False
 ```
 
 ### -EnableIPv6
-{{Fill EnableIPv6 Description}}
+Enabled IPv6
 
 ```yaml
 Type: SwitchParameter
@@ -89,7 +89,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostAddress
-{{Fill HostAddress Description}}
+The address of the docker daemon to connect to.
 
 ```yaml
 Type: String
@@ -149,7 +149,7 @@ Accept wildcard characters: False
 ```
 
 ### -Name
-{{Fill Name Description}}
+Specifies the name to give the new network.
 
 ```yaml
 Type: String

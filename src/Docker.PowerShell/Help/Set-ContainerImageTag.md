@@ -6,7 +6,7 @@ online version:
 
 # Set-ContainerImageTag
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Sets tags for a container image. 
 ## SYNTAX
 
 ### Default (Default)
@@ -22,19 +22,19 @@ Set-ContainerImageTag [-Force] [-Repository] <String> [[-Tag] <String>] [-Image]
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+Sets tags for a container image. 
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> {{ Add example code here }}
+PS C:\> Set-ContainerImageTag -Image $myImage -Tag Latest
 ```
 
-{{ Add example description here }}
+Tags $myImage with the tag "Latest"
 ## PARAMETERS
 
 ### -CertificateLocation
-{{Fill CertificateLocation Description}}
+The location of the X509 certificate file named “key.pfx” that will be used for authentication with the server.  (Note that certificate authorization work is still in progress and this is likely to change).
 
 ```yaml
 Type: String
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-{{Fill Force Description}}
+Forces the operation without prompting for confirmation.
 
 ```yaml
 Type: SwitchParameter
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostAddress
-{{Fill HostAddress Description}}
+The address of the docker daemon to connect to.
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{Fill Id Description}}
+The Id of the image to set tags for. 
 
 ```yaml
 Type: String[]
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Image
-{{Fill Image Description}}
+The container image object to set tags for. 
 
 ```yaml
 Type: ImagesListResponse[]
@@ -109,7 +109,7 @@ Accept wildcard characters: False
 ```
 
 ### -Repository
-{{Fill Repository Description}}
+Specifies a repository. 
 
 ```yaml
 Type: String
@@ -124,7 +124,7 @@ Accept wildcard characters: False
 ```
 
 ### -Tag
-{{Fill Tag Description}}
+Specifies the tag to be set on the container image.
 
 ```yaml
 Type: String

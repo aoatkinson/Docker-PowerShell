@@ -6,7 +6,7 @@ online version:
 
 # Remove-ContainerNet
 ## SYNOPSIS
-{{Fill in the Synopsis}}
+Removes a container network.
 ## SYNTAX
 
 ### Default (Default)
@@ -22,19 +22,19 @@ Remove-ContainerNet [-Force] [-Network] <NetworkListResponse[]> [-CertificateLoc
 ```
 
 ## DESCRIPTION
-{{Fill in the Description}}
+Removes a container network.
 ## EXAMPLES
 
 ### Example 1
 ```
-PS C:\> {{ Add example code here }}
+PS C:\> Remove-ContainerNetwork -Name test
 ```
 
-{{ Add example description here }}
+Removes the network named "test"
 ## PARAMETERS
 
 ### -CertificateLocation
-{{Fill CertificateLocation Description}}
+The location of the X509 certificate file named “key.pfx” that will be used for authentication with the server.  (Note that certificate authorization work is still in progress and this is likely to change).
 
 ```yaml
 Type: String
@@ -49,7 +49,7 @@ Accept wildcard characters: False
 ```
 
 ### -Force
-{{Fill Force Description}}
+Forces the operation without prompting for confirmation.
 
 ```yaml
 Type: SwitchParameter
@@ -64,7 +64,7 @@ Accept wildcard characters: False
 ```
 
 ### -HostAddress
-{{Fill HostAddress Description}}
+The address of the docker daemon to connect to.
 
 ```yaml
 Type: String
@@ -79,7 +79,7 @@ Accept wildcard characters: False
 ```
 
 ### -Id
-{{Fill Id Description}}
+Specifies the Id of the network to be removed.
 
 ```yaml
 Type: String[]
@@ -94,7 +94,7 @@ Accept wildcard characters: False
 ```
 
 ### -Network
-{{Fill Network Description}}
+Specifies the network to be removed. 
 
 ```yaml
 Type: NetworkListResponse[]
